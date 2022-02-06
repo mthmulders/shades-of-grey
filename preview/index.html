@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>Shades of Grey preview</title>
+    <link rel="stylesheet" href="reveal.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="lib/css/tomorrow-night-blue.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'print/pdf.css' : 'print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="start">
+                <h1>Title slide</h1>
+            </section>
+            <section id="toc">
+                <h2>Agenda</h2>
+                <ul>
+                    <li>Topic 1</li>
+                    <li>Topic 2</li>
+                    <li>Topic 3</li>
+                </ul>
+            </section>
+            <section id="code">
+                <h3>Here, have some code!</h3>
+                <pre><code data-trim data-noescape class="java">public class Demo {
+    public static void main(final String... args) {
+        final Supplier<String> supplier = () -> "world";
+        final String message = String.format("Hello, %s!", supplier.get());
+        System.out.println(message);
+    }
+}</code></pre>
+            </section>
+            <section id="quote">
+                <h3>Here, have a quote!</h3>
+                <blockquote>This is a famous quote.</blockquote>
+            </section>
+            <section id="math">
+                <h3>Here, have some math!</h3>
+                $e=mc^2$
+            </section>
+            <section id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Value 1</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                        </tr>
+                        <tr>
+                            <td>Value 1</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                        </tr>
+                        <tr>
+                            <td>Value 1</td>
+                            <td>Value 2</td>
+                            <td>Value 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="subsection">
+                <section id="subsection-1">
+                    <h3>Subsection 1</h3>
+                    <div>This requires <strong>some</strong> attention!</div>
+                    <div>This requires <em>some more</em> attention!</div>
+                </section>
+                <section id="subsection-2">
+                    <h3>Subsection 2</h3>
+                    <div>This section has <a href="https://maarten.mulders.it">a link</a> in it!</div>
+                </section>
+                <section id="subsection-3">
+                    <h3>Subsection 3</h3>
+                </section>
+            </section>
+            <section id="text">
+                Oh, here's some text as well.
+                I figured it might be nice to see a little bigger body of text.
+            </section>
+            <section id="image">
+                Plus, we need kittens. Obviously.
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Kitten_5.jpg/640px-Kitten_5.jpg" />
+            </section>
+            <section id="end">
+                <h3>Questions, remarks, discussions...</h3>
+                <span class="attributions">
+                    <h4>Image attributions</h4>
+                    <ul>
+                        <li>(none)</li>
+                    </ul>
+                </span>
+            </section>
+        </div>
+        <div class="footer">
+            <span class="conference">Conference logo goes here</span>
+            <span class="speaker">@mthmulders</span>
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: false,
+            dependencies: [
+                // Interpret Markdown in <section> elements
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+
+                // Syntax highlight for <code> elements
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+
+                // Speaker notes
+                { src: 'plugin/notes/notes.js', async: true },
+
+                // Mathematical formulas
+                { src: 'plugin/math/math.js', async: true,  }
+            ],
+            // height: 700,
+            history: true,
+            progress: false,
+            slideNumber: false,
+            // width: 960,
+        });
+    </script>
+</body>
+
+</html>
