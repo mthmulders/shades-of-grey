@@ -1,0 +1,44 @@
+{
+  "author": "Maarten Mulders",
+  "bugs": {
+    "url": "https://github.com/mthmulders/shades-of-grey/issues"
+  },
+  "dependencies": {
+    "highlight.js": "11.0.1",
+    "reveal.js": "3.6.0"
+  },
+  "description": "A Reveal.js theme where a dark shade of grey is dominant",
+  "devDependencies": {
+    "autoprefixer": "10.4.2",
+    "browser-sync": "2.27.7",
+    "del": "6.0.0",
+    "fancy-log": "2.0.0",
+    "gulp": "4.0.2",
+    "gulp-postcss": "9.0.1",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-rename": "2.0.0",
+    "natives": "1.1.6",
+    "postcss-nested": "5.0.6",
+    "tailwindcss": "3.0.18"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "homepage": "https://github.com/mthmulders/shades-of-grey#readme",
+  "keywords": [
+    "reveal.js"
+  ],
+  "license": "MIT",
+  "main": "shades-of-grey.js",
+  "name": "shades-of-grey",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthmulders/shades-of-grey.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "package": "gulp build && npm pack build/"
+  },
+  "version": "0.1.0"
+}
