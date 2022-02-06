@@ -38,18 +38,22 @@ jobs:
       run: |
         cp -Rv build/* preview/
 
+    - name: Check out repository
+      uses: actions/checkout@v2.4.0
+      with:
+        ref: 'gh-pages'
+        path: 'out/'
+
     - name: Deploy preview slide deck
       run: |
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Action"
 
-        git clone ${{ github.repositoryUrl }} ~/out
-        cd ~/out
-        git checkout gh-pages || git checkout --orphan gh-pages
+        cd ${{ github.workspace }}/out
         git rm -rf .
         cp -LRv ${{ github.workspace }}/preview/* .
 
         git add -A
         git commit -m "Automated deployment to GitHub Pages: ${{ github.sha }}" --allow-empty
-        git push origin gh-pages
+        git push origin HEAD:gh-pages
       if: github.ref == 'refs/heads/main'
