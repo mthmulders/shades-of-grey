@@ -1,0 +1,52 @@
+name: Publish preview
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Check out repository
+      uses: actions/checkout@v2.4.0
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    
+    - name: Restore cache of NPM packages
+      uses: actions/cache@v2.1.7
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    
+    - name: Fetch NPM packages
+      run:
+        npm i
+      
+    - name: Prepare distribution-ready files
+      run: npm run build
+
+    - name: Copy distribution files into preview folder
+      command: cp -Rv build/* preview/
+
+    - name: Deploy preview slide deck
+      run: |
+        git config --global user.email $GH_EMAIL
+        git config --global user.name $GH_NAME
+
+        git clone ${{ github.repositoryUrl }} ~/out
+        cd ~/out
+        git checkout gh-pages || git checkout --orphan gh-pages
+        git rm -rf .
+        cp -LRv ${{ github.workspace }}/preview/* .
+
+        git add -A
+        git commit -m "Automated deployment to GitHub Pages: ${{ github.sha }}" --allow-empty
+        git push origin gh-pages
+      if: github.ref == 'refs/heads/main'
