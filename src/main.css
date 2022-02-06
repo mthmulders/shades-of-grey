@@ -1,7 +1,5 @@
+@import './background.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.reveal.slide {
-    @apply bg-gray-900 text-gray-300;
-}
