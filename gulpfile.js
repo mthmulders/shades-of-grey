@@ -29,7 +29,7 @@ const css = (cb) => {
   
     return src('src/**/*.css')
       .pipe(sourcemaps.init() )
-      .pipe(postcss([require('autoprefixer'), require('postcss-nested')]))
+      .pipe(postcss())
       .pipe(sourcemaps.write('.'))
       .pipe(dest('build/'))
 };
