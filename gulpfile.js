@@ -3,6 +3,7 @@ const { dest, parallel, series, src, watch } = require('gulp');
 const _browserSync = require('browser-sync').create();
 const del = require('del');
 const log = require('fancy-log');
+const rename = require('gulp-rename');
 
 const browserSync = (cb) => {
     const options = {
@@ -31,6 +32,7 @@ const css = (cb) => {
       .pipe(sourcemaps.init() )
       .pipe(postcss())
       .pipe(sourcemaps.write('.'))
+      .pipe(rename('shades-of-grey.css'))
       .pipe(dest('build/'))
 };
 
