@@ -1,0 +1,15 @@
+.reveal pre {
+    width: 100%;
+}
+
+.hljs {
+    @apply bg-transparent !important; /* override Highlight.js */
+}
+
+.reveal pre {
+    @apply max-w-full;
+}
+
+pre code.hljs {
+    @apply font-mono;
+}
