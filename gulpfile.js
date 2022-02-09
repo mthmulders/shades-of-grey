@@ -34,6 +34,7 @@ const css = (cb) => {
       .pipe(sourcemaps.write('.'))
       .pipe(rename('shades-of-grey.css'))
       .pipe(dest('build/'))
+      .pipe(_browserSync.reload({ stream: true }));
 };
 
 const copyFonts = (cb) => {
