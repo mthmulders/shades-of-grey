@@ -1,0 +1,45 @@
+.reveal {
+    @apply text-2xl subpixel-antialiased;
+}
+
+.reveal em {
+    @apply text-red-600 italic;
+}
+
+.reveal strong {
+    @apply text-red-600 font-bold;
+}
+
+.reveal .slides {
+    @apply text-left;
+}
+
+.reveal section h1,
+.reveal section h2,
+.reveal section h3,
+.reveal section h4 {
+    font-variant: small-caps;
+    @apply mb-4;
+}
+
+.reveal section h1 {
+    @apply text-9xl;
+}
+
+.reveal section h2 {
+    @apply text-7xl;
+}
+
+.reveal section h3 {
+    @apply text-5xl;
+}
+
+.reveal section h4 {
+    @apply text-3xl;
+}
+
+.reveal section img,
+.reveal section video,
+.reveal section iframe {
+    @apply border-none max-w-full max-h-full;
+}
