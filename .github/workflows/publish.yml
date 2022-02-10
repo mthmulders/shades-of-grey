@@ -32,6 +32,7 @@ jobs:
       
     - name: Prepare distribution-ready files
       run: |
+        npm run update-reveal
         npm run build
 
     - name: Copy distribution files into preview folder
