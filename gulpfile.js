@@ -28,7 +28,7 @@ const css = (cb) => {
     const postcss    = require('gulp-postcss')
     const sourcemaps = require('gulp-sourcemaps')
   
-    return src('src/**/*.css')
+    return src('src/**/main.css')
       .pipe(sourcemaps.init() )
       .pipe(postcss())
       .pipe(sourcemaps.write('.'))
