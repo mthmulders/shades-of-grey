@@ -1,13 +1,10 @@
-.reveal pre {
-    width: 100%;
-}
-
 .hljs {
-    @apply bg-transparent !important; /* override Highlight.js */
+    /* override Highlight.js */
+    @apply bg-transparent !important; 
 }
 
 .reveal pre {
-    @apply max-w-full;
+    @apply max-w-full rounded-lg border-4 border-solid border-cyan-900 text-lg;
 }
 
 pre code.hljs {
