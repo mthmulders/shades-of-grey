@@ -1,0 +1,9 @@
+.reveal blockquote {
+    quotes: "\201C" "\201C";
+    @apply inline-block text-3xl text-left pl-16 border-solid border-l-cyan-900 border-l-8
+}
+
+.reveal blockquote:before {
+    content: open-quote;
+    @apply text-6xl float-left block -ml-12 leading-3;
+}
