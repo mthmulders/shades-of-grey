@@ -259,14 +259,19 @@ body {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-.reveal pre {
-    width: 100%;
-}
 .hljs {
-  background-color: transparent !important; /* override Highlight.js */
+    /* override Highlight.js */
+    background-color: transparent !important; 
 }
 .reveal pre {
   max-width: 100%;
+  border-radius: 0.5rem;
+  border-width: 4px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(22 78 99 / var(--tw-border-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 pre code.hljs {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -318,7 +323,27 @@ pre code.hljs {
   max-width: 100%;
   border-style: none;
 }
-/*! tailwindcss v3.0.19 | MIT License | https://tailwindcss.com*/
+.reveal blockquote {
+    quotes: "\201C" "\201C";
+    display: inline-block;
+    border-left-width: 8px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-left-color: rgb(22 78 99 / var(--tw-border-opacity));
+    padding-left: 4rem;
+    text-align: left;
+    font-size: 1.875rem;
+    line-height: 2.25rem}
+.reveal blockquote:before {
+    content: open-quote;
+    float: left;
+    margin-left: -3rem;
+    display: block;
+    font-size: 3.75rem;
+    line-height: 1;
+    line-height: .75rem;
+}
+/*! tailwindcss v3.0.21 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -674,6 +699,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.float-left {
+  float: left;
+}
+.-ml-12 {
+  margin-left: -3rem;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
 .table {
   display: table;
 }
@@ -683,11 +720,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-collapse {
   border-collapse: collapse;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
 }
+.border-4 {
+  border-width: 4px;
+}
+.border-l-8 {
+  border-left-width: 8px;
+}
+.border-solid {
+  border-style: solid;
+}
 .border-none {
   border-style: none;
+}
+.border-cyan-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 78 99 / var(--tw-border-opacity));
+}
+.border-l-cyan-900 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(22 78 99 / var(--tw-border-opacity));
 }
 .bg-gray-900 {
   --tw-bg-opacity: 1;
@@ -696,9 +753,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-transparent {
   background-color: transparent;
 }
+.pl-16 {
+  padding-left: 4rem;
+}
+.text-left {
+  text-align: left;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .text-red-600 {
   --tw-text-opacity: 1;
