@@ -22,6 +22,16 @@
     @apply mb-4;
 }
 
+section[data-background-image] h1,
+section[data-background-image] h2,
+section[data-background-image] blockquote {
+    text-shadow:
+        -1px -1px 0 theme('colors.cyan.900'),
+        1px -1px 0 theme('colors.cyan.900'),
+        -1px 1px 0 theme('colors.cyan.900'),
+        1px 1px 0 theme('colors.cyan.900') !important;
+}
+
 .reveal section h1 {
     @apply text-9xl;
 }
