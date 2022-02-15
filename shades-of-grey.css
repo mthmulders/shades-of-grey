@@ -302,6 +302,15 @@ pre code.hljs {
     font-variant: small-caps;
     margin-bottom: 1rem;
 }
+section[data-background-image] h1,
+section[data-background-image] h2,
+section[data-background-image] blockquote {
+    text-shadow:
+        -1px -1px 0 #164e63,
+        1px -1px 0 #164e63,
+        -1px 1px 0 #164e63,
+        1px 1px 0 #164e63 !important;
+}
 .reveal section h1 {
   font-size: 8rem;
   line-height: 1;
@@ -343,7 +352,7 @@ pre code.hljs {
     line-height: 1;
     line-height: .75rem;
 }
-/*! tailwindcss v3.0.21 | MIT License | https://tailwindcss.com*/
+/*! tailwindcss v3.0.22 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
