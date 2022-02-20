@@ -1,0 +1,24 @@
+.reveal .footer {
+    z-index: 5;
+
+    @apply absolute bottom-0 h-12;
+    @apply w-full;
+
+    @apply bg-gradient-to-r from-cyan-900 to-cyan-500;
+}
+
+.reveal .footer span {
+    @apply px-4 pt-1;
+}
+
+.reveal .footer span.conference {
+    @apply float-left;
+}
+
+.reveal .footer span.speaker {
+    @apply float-right;
+    @apply bg-[url('/img/twitter.png')] bg-no-repeat bg-[length:45px_auto];
+
+    padding-left: 50px;
+    background-position: -5px -2px;
+}

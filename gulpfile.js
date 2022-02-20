@@ -42,7 +42,7 @@ const copyFonts = (cb) => {
 };
 
 const copyImages = (cb) => {
-    return src('./img/**/*').pipe(dest('./build/img/'));
+    return src('./src/img/**/*').pipe(dest('./build/img/'));
 };
 
 const copyPreview = (cb) => {
