@@ -32,6 +32,10 @@ section[data-background-image] blockquote {
         1px 1px 0 theme('colors.cyan.900') !important;
 }
 
+section.bright-background {
+    @apply text-gray-900;
+}
+
 .reveal section h1 {
     @apply text-9xl;
 }
