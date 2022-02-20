@@ -272,6 +272,7 @@ body {
   border-color: rgb(22 78 99 / var(--tw-border-opacity));
   font-size: 1.125rem;
   line-height: 1.75rem;
+    width: 100%;
 }
 pre code.hljs {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -311,21 +312,25 @@ section[data-background-image] blockquote {
         -1px 1px 0 #164e63,
         1px 1px 0 #164e63 !important;
 }
-.reveal section h1 {
-  font-size: 8rem;
-  line-height: 1;
+section.bright-background {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.reveal section h2 {
+.reveal section h1 {
   font-size: 4.5rem;
   line-height: 1;
 }
-.reveal section h3 {
+.reveal section h2 {
   font-size: 3rem;
   line-height: 1;
 }
+.reveal section h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .reveal section h4 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .reveal section img, .reveal section video, .reveal section iframe {
   max-height: 100%;

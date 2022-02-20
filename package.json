@@ -31,7 +31,7 @@
     "reveal.js"
   ],
   "license": "MIT",
-  "main": "shades-of-grey.js",
+  "main": "shades-of-grey.css",
   "name": "shades-of-grey",
   "repository": {
     "type": "git",
