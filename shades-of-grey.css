@@ -332,6 +332,34 @@ section[data-background-image] blockquote {
   max-width: 100%;
   border-style: none;
 }
+.reveal .footer {
+    z-index: 5;
+    position: absolute;
+    bottom: 0px;
+    height: 3rem;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #164e63;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
+    --tw-gradient-to: #06b6d4;
+}
+.reveal .footer span {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+}
+.reveal .footer span.conference {
+  float: left;
+}
+.reveal .footer span.speaker {
+  float: right;
+  background-image: url('/img/twitter.png');
+  background-size: 45px auto;
+  background-repeat: no-repeat;
+
+    padding-left: 50px;
+    background-position: -5px -2px;
+}
 .reveal blockquote {
     quotes: "\201C" "\201C";
     display: inline-block;
@@ -708,6 +736,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.bottom-0 {
+  bottom: 0px;
+}
 .float-left {
   float: left;
 }
@@ -761,6 +795,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-\[url\(\'\/img\/twitter\.png\'\)\] {
+  background-image: url('/img/twitter.png');
+}
+.from-cyan-900 {
+  --tw-gradient-from: #164e63;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 78 99 / 0));
+}
+.bg-\[length\:45px_auto\] {
+  background-size: 45px auto;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .pl-16 {
   padding-left: 4rem;
