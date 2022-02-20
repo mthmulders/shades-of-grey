@@ -5,6 +5,7 @@
 
 .reveal pre {
     @apply max-w-full rounded-lg border-4 border-solid border-cyan-900 text-lg;
+    width: 100%;
 }
 
 pre code.hljs {
