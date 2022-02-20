@@ -37,19 +37,19 @@ section.bright-background {
 }
 
 .reveal section h1 {
-    @apply text-9xl;
-}
-
-.reveal section h2 {
     @apply text-7xl;
 }
 
-.reveal section h3 {
+.reveal section h2 {
     @apply text-5xl;
 }
 
+.reveal section h3 {
+    @apply text-4xl;
+}
+
 .reveal section h4 {
-    @apply text-3xl;
+    @apply text-2xl;
 }
 
 .reveal section img,
