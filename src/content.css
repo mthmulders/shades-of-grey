@@ -1,5 +1,7 @@
-.reveal {
-    @apply text-2xl subpixel-antialiased;
+.reveal,
+.reveal div {
+    @apply text-3xl subpixel-antialiased;
+    font-family: 'Hubballi', sans-serif;
 }
 
 .reveal em {
@@ -18,8 +20,9 @@
 .reveal section h2,
 .reveal section h3,
 .reveal section h4 {
+    font-family: 'Hubballi', sans-serif;
     font-variant: small-caps;
-    @apply mb-4;
+    @apply mb-4 font-bold;
 }
 
 section[data-background-image] h1,
