@@ -1,7 +1,7 @@
 .reveal,
 .reveal div {
     @apply text-3xl subpixel-antialiased;
-    font-family: 'Hubballi', sans-serif;
+    @apply font-hubballi;
 }
 
 .reveal em {
@@ -20,7 +20,7 @@
 .reveal section h2,
 .reveal section h3,
 .reveal section h4 {
-    font-family: 'Hubballi', sans-serif;
+    @apply font-hubballi;
     font-variant: small-caps;
     @apply mb-4 font-bold;
 }

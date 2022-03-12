@@ -9,5 +9,5 @@
 }
 
 pre code.hljs {
-    font-family: 'Fira Code', Courier, monospace;
+    @apply font-fira-code;
 }

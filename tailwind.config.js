@@ -3,7 +3,12 @@ module.exports = {
     './src/**/*.css'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'fira-code': [ 'Fira Code', 'Courier', 'monospace' ],
+        'hubballi': [ 'Hubballi', 'sans-serif' ]
+      }
+    },
   },
   plugins: [],
 }
