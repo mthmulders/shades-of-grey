@@ -1,11 +1,11 @@
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code&family=Hubballi&display=swap';
+
 @import './_reveal.css';
 @import './background.css';
 @import './code.css';
 @import './content.css';
 @import './footer.css';
 @import './quotes.css';
-
-@import 'https://fonts.googleapis.com/css2?family=Fira+Code&family=Hubballi&display=swap';
 
 @tailwind base;
 @tailwind components;
