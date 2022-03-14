@@ -275,13 +275,14 @@ body {
     width: 100%;
 }
 pre code.hljs {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Fira Code, Courier, monospace;
 }
-.reveal {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.reveal, .reveal div {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+  font-family: Hubballi, sans-serif;
 }
 .reveal em {
   font-style: italic;
@@ -296,12 +297,11 @@ pre code.hljs {
 .reveal .slides {
   text-align: left;
 }
-.reveal section h1,
-.reveal section h2,
-.reveal section h3,
-.reveal section h4 {
+.reveal section h1, .reveal section h2, .reveal section h3, .reveal section h4 {
+  font-family: Hubballi, sans-serif;
     font-variant: small-caps;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 section[data-background-image] h1,
 section[data-background-image] h2,
@@ -336,6 +336,49 @@ section.bright-background {
   max-height: 100%;
   max-width: 100%;
   border-style: none;
+}
+/**
+ * Copied from Google Fonts
+ */
+/* latin-ext */
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* src: url(https://fonts.gstatic.com/s/firacode/v17/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77Nv7g.woff2) format('woff2'); */
+    src: url('/fonts/fira-code-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* src: url(https://fonts.gstatic.com/s/firacode/v17/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2) format('woff2'); */
+    src: url('/fonts/fira-code-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* src: url(https://fonts.gstatic.com/s/hubballi/v3/o-0JIpUj3WIZ1RFN55BywhF9Yg.woff2) format('woff2'); */
+    src: url('/fonts/hubballi-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* src: url(https://fonts.gstatic.com/s/hubballi/v3/o-0JIpUj3WIZ1RFN55B8whE.woff2) format('woff2'); */
+    src: url('/fonts/hubballi-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .reveal .footer {
     z-index: 5;
@@ -750,6 +793,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .float-left {
   float: left;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .-ml-12 {
   margin-left: -3rem;
 }
@@ -826,10 +872,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-left {
   text-align: left;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-3xl {
   font-size: 1.875rem;
