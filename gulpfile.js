@@ -38,7 +38,7 @@ const css = (cb) => {
 };
 
 const copyFonts = (cb) => {
-    return src('./fonts/**/*').pipe(dest('./build/fonts/'));
+    return src('./src/fonts/**/*').pipe(dest('./build/fonts/'));
 };
 
 const copyImages = (cb) => {

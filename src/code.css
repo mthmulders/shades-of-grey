@@ -9,5 +9,5 @@
 }
 
 pre code.hljs {
-    @apply font-mono;
+    @apply font-fira-code;
 }
