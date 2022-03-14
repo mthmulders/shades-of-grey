@@ -1,5 +1,8 @@
 const { dest, parallel, series, src, watch } = require('gulp');
 
+const postcss    = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
+
 const _browserSync = require('browser-sync').create();
 const del = require('del');
 const log = require('fancy-log');
@@ -25,9 +28,6 @@ const clean = (cb) => {
 };
 
 const css = (cb) => {
-    const postcss    = require('gulp-postcss')
-    const sourcemaps = require('gulp-sourcemaps')
-  
     return src('src/**/main.css')
       .pipe(sourcemaps.init() )
       .pipe(postcss())
