@@ -19,6 +19,7 @@
     "gulp-sourcemaps": "3.0.0",
     "natives": "1.1.6",
     "postcss-import": "14.0.2",
+    "postcss-minify": "1.1.0",
     "postcss-nested": "5.0.6",
     "sass": "1.49.9",
     "tailwindcss": "3.0.23"
