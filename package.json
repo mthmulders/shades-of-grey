@@ -9,8 +9,8 @@
   },
   "description": "A Reveal.js theme where a dark shade of grey is dominant",
   "devDependencies": {
-    "autoprefixer": "10.4.2",
-    "browser-sync": "2.27.8",
+    "autoprefixer": "10.4.4",
+    "browser-sync": "2.27.9",
     "del": "6.0.0",
     "fancy-log": "2.0.0",
     "gulp": "4.0.2",
@@ -44,5 +44,5 @@
     "update-reveal": "sass --no-source-map src/reveal.scss src/_reveal.css",
     "package": "gulp build && npm pack build/"
   },
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
