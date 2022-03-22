@@ -12,6 +12,10 @@
     @apply text-3xl;
 }
 
+.reveal .small code {
+    @apply text-xl;
+}
+
 pre code.hljs {
     @apply font-fira-code;
 }

@@ -12,6 +12,10 @@
     @apply text-red-600 font-bold;
 }
 
+.reveal .small {
+    @apply text-2xl;
+}
+
 .reveal .slides {
     @apply text-left;
 }
