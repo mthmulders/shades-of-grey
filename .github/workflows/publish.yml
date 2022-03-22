@@ -19,7 +19,7 @@ jobs:
         node-version: '16'
     
     - name: Restore cache of NPM packages
-      uses: actions/cache@v2.1.7
+      uses: actions/cache@v3
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
