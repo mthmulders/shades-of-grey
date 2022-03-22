@@ -15,6 +15,11 @@
     @apply float-left;
 }
 
+.reveal .footer span.conference img {
+    @apply inline float-left h-10;
+    margin-top: -2px;
+}
+
 .reveal .footer span.speaker {
     @apply float-right;
     @apply bg-[url('/img/twitter.png')] bg-no-repeat bg-[length:45px_auto];
