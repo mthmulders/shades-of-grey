@@ -5,6 +5,7 @@
     @apply w-full;
 
     @apply bg-gradient-to-r from-cyan-900 to-cyan-500;
+    @apply text-3xl;
 }
 
 .reveal .footer span {

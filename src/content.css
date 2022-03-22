@@ -1,6 +1,6 @@
 .reveal,
 .reveal div {
-    @apply text-3xl subpixel-antialiased;
+    @apply text-4xl subpixel-antialiased;
     @apply font-hubballi;
 }
 
@@ -40,19 +40,19 @@ section.bright-background {
 }
 
 .reveal section h1 {
-    @apply text-7xl;
+    @apply text-8xl;
 }
 
 .reveal section h2 {
-    @apply text-5xl;
+    @apply text-6xl;
 }
 
 .reveal section h3 {
-    @apply text-4xl;
+    @apply text-5xl;
 }
 
 .reveal section h4 {
-    @apply text-2xl;
+    @apply text-4xl;
 }
 
 .reveal section img,
