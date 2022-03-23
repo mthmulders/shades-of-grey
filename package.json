@@ -18,7 +18,7 @@
     "gulp-rename": "2.0.0",
     "gulp-sourcemaps": "3.0.0",
     "natives": "1.1.6",
-    "postcss-import": "14.0.2",
+    "postcss-import": "14.1.0",
     "postcss-minify": "1.1.0",
     "postcss-nested": "5.0.6",
     "sass": "1.49.9",
@@ -44,5 +44,5 @@
     "update-reveal": "sass --no-source-map src/reveal.scss src/_reveal.css",
     "package": "gulp build && npm pack build/"
   },
-  "version": "0.2.1"
+  "version": "0.2.2"
 }
