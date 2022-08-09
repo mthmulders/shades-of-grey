@@ -28,3 +28,10 @@
     padding-left: 50px;
     background-position: -5px -2px;
 }
+
+.reveal .footer span.speaker img {
+    float: right;
+    display: inline;
+    height: 2.5rem;
+    margin-top: -2px;
+}
