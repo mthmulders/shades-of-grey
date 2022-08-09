@@ -75,8 +75,4 @@ const build = series(clean, parallel(copyFonts, copyImages, css), () => {
 exports.build = build;
 exports.dev = dev;
 
-if (process.env.NODE_ENV === 'production') {
-    exports.default = dev;
-} else {
-    exports.default = build;
-}
+exports.default = process.env.NODE_ENV === 'production' ? build : dev;
