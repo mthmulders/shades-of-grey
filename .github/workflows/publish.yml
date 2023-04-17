@@ -1,5 +1,8 @@
 name: Publish preview
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
@@ -39,22 +42,9 @@ jobs:
       run: |
         cp -Rv build/* preview/
 
-    - name: Check out repository
-      uses: actions/checkout@v3
-      with:
-        ref: 'gh-pages'
-        path: 'out/'
-
     - name: Deploy preview slide deck
-      run: |
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "GitHub Action"
-
-        cd ${{ github.workspace }}/out
-        git rm -rf .
-        cp -LRv ${{ github.workspace }}/preview/* .
-
-        git add -A
-        git commit -m "Automated deployment to GitHub Pages: ${{ github.sha }}" --allow-empty
-        git push origin HEAD:gh-pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build/
+        branch: gh-pages
       if: github.ref == 'refs/heads/main'
