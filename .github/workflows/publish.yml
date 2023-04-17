@@ -58,7 +58,7 @@ jobs:
       with:
         path: ./preview
 
-  deploy-preview:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
