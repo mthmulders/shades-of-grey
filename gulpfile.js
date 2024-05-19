@@ -38,11 +38,13 @@ const css = (cb) => {
 };
 
 const copyFonts = (cb) => {
-    return src('./src/fonts/**/*').pipe(dest('./build/fonts/'));
+    return src('./src/fonts/**/*')
+        .pipe(dest('./build/fonts/'));
 };
 
 const copyImages = (cb) => {
-    return src('./src/img/**/*').pipe(dest('./build/img/'));
+    return src('./src/img/**/*')
+        .pipe(dest('./build/img/'));
 };
 
 const copyPreview = (cb) => {
