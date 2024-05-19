@@ -9,10 +9,6 @@
 }
 
 .reveal code {
-    @apply text-3xl;
-}
-
-.reveal .small code {
     @apply text-xl;
 }
 
