@@ -44,5 +44,5 @@
     "update-reveal": "sass --no-source-map src/reveal.scss src/_reveal.css",
     "package": "gulp build && npm pack build/"
   },
-  "version": "0.3.0"
+  "version": "0.4.0"
 }
