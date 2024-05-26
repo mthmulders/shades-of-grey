@@ -5,11 +5,11 @@
 }
 
 .reveal em {
-    @apply text-red-600 italic;
+    @apply text-amber-400 italic;
 }
 
 .reveal strong {
-    @apply text-red-600 font-bold;
+    @apply text-amber-400 font-bold;
 }
 
 .reveal .small {
