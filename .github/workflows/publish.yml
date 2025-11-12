@@ -12,6 +12,8 @@ concurrency:
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -62,6 +64,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    if: github.event_name == 'push' && contains(github.ref, 'main')
 
     runs-on: ubuntu-latest
 
